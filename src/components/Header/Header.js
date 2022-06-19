@@ -4,6 +4,7 @@ import logo from "../../assets/images/DogPNG.png";
 /* import { Link } from "react-router-dom"; */
 import { useState } from "react";
 import Dropdown from "./Dropdown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [DropdownMenu, setDropdown] = useState(false);
@@ -16,7 +17,9 @@ const Header = () => {
     <>
       <header>
           <div className="headerLogo">
+            <Link to={"/"}>
             <img src={logo} alt="logo" />
+            </Link>
           </div>
         <div className="headerContainer">
           <div className="iconContainer">

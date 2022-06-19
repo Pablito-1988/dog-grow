@@ -19,16 +19,13 @@ a{
     align-items: center;
     justify-content: space-around;
 }
-.headerLogo{
-    width: 50%;
-    display: flex;
-}
+
 
 
 #burgerMenu{
     font-size: 24px;
-    
     color: white;
+    margin-bottom: 10px;
 }
 
 .dropDownContent{
