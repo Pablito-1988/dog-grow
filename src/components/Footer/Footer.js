@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
       </footer>
       <div className="copy">
-        <p>
-          Hecho con <i id="weed" className="fas fa-cannabis"></i> por Pablito.{" "}
+        <p className="copyText">
+          Hecho con <i id="weed" className="fas fa-cannabis"></i> por Pablito
         </p>
       </div>
     </>
