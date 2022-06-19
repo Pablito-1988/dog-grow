@@ -1,0 +1,58 @@
+
+ p{
+    margin: 0;
+ }
+ footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+
+ }
+ .shipContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #ecf0f1;
+    font-size: 16px;
+    
+ }
+ .shipText{
+    margin-top: 10px;
+ }
+ .contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #ecf0f1;
+    margin-top: 30px;
+ }
+ .contactLinks{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    margin-top: 10px;
+
+ }
+ .copy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ #weed{
+    color: rgb(73,155,74);
+    animation-duration: 5s;
+    animation-name: beating;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes beating{
+    0%{font-size: 10px;}
+    25%{font-size: 20px;}
+    50%{font-size: 10px;}
+    75%{font-size: 20px;}
+    100%{font-size: 10px;}
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../assets/images/DogPNG.png";
-/* import { Link } from "react-router-dom"; */
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
