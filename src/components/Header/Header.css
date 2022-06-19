@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.headerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerLogo{
+    width: 50%;
+    display: flex;
+}
+
+
+#burgerMenu{
+    font-size: 24px;
+    
+    color: white;
+}
+
+.dropDownContent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation-name: apear;
+    animation-duration: 0.1s;
+}
+
+@keyframes apear{
+    0%{
+      height: 0vh;
+    }
+    100%{
+        height: 15vh;
+    }
+}
+
+.navLink{
+    font-size: 24px;
+}
+.navLink:hover{
+    color: green;
+}
+
