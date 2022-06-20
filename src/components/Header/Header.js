@@ -22,20 +22,15 @@ const Header = () => {
               id="burgerMenu"
               className="fas fa-bars"
             ></i>
-            {/* <button
-              onClick={handleDropdown}
-              id="burgerMenu"
-              className="menuButton"
-            >Menú</button> */}
+            {/* <p className="burguerQuote">Menú</p> */}
           </div>
         </div>
-          <div className="headerLogo">
-            <Link to={"/"} >
+        <div className="headerLogo">
+          <Link to={"/"}>
             <img src={logo} alt="logo" />
-            </Link>
-          </div>
-        <div className="headerSpace">
+          </Link>
         </div>
+        <div className="headerSpace"></div>
       </header>
       {DropdownMenu ? <Dropdown change={handleDropdown} /> : null}
     </>
