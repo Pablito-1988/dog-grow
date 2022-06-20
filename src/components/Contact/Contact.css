@@ -3,11 +3,13 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-bottom: 50px;
+    
 }
 .contactQuote{
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+    
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -32,4 +34,23 @@
 textarea{
     border-radius: 5px;
     font-size: 18px;
+}
+.submitButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contactButton{
+    text-align: center;
+    width: 45%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18PX;
+    background-color: rgb(11, 155,242);
+    color: #fff;
+}
+.contactButton:hover{
+    background-color: #fff;
+    color: green;
 }

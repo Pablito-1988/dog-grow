@@ -48,13 +48,13 @@ const ContactForm = () => {
                   cols="30"
                   name="text"
                   rows="10"
-                  placeholder="mensaje"
+                  placeholder="Dejá un mensaje copado :)"
                   required
                 ></textarea>
                 </div>
                 <div className="submitButton">
                   <button className="contactButton" type="submit">
-                  Enviar
+                  ENVIAR
                   </button>
                 </div>
               </form>
