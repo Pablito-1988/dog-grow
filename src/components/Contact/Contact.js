@@ -6,7 +6,7 @@ const Contact = () => {
     return (
        <>
        <div className='contactContainer'>
-            <h2>CONTACTO</h2>
+            <h3>CONTACTO</h3>
             <p className='contactQuote'>Cualquier duda o consulta no dudes en ponerte en contacto con nosotros!!!</p>
             <ContactForm />
        </div>

@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
           <div className="headerLogo">
-            <Link to={"/"}>
+            <Link to={"/"} >
             <img src={logo} alt="logo" />
             </Link>
           </div>
