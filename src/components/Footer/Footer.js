@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="contact">
           <p>CONTACTO</p>
           <div className="contactLinks">
-            <a href="https://api.whatsapp.com/send?phone=541134284190"><i className="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/5491134284190" target={"_blank"} rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
             <i className="fas fa-envelope"></i>
           </div>
         </div>

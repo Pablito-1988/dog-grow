@@ -1,0 +1,35 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contactQuote{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.formContainer{
+    width: 100%;
+}
+.nameAndEmailContainer{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 10px;
+}
+.nameInput,.emailInput{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0;
+}
+textarea{
+    border-radius: 5px;
+    font-size: 18px;
+}
