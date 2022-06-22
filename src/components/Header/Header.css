@@ -53,8 +53,6 @@ a{
     flex-direction: column;
     width: 100%;
     animation-name: apear;
-    
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
@@ -69,7 +67,7 @@ a{
 
 .navLink{
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .navLink:hover{
     color: green;
