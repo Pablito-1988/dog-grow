@@ -10,11 +10,12 @@ const Products = () => {
             setProduct(data.items);
         }
         )
-    },[])
+    })
     console.log(product)
     return (
         <div>
             <p>hola</p>
+
         </div>
     );
 };

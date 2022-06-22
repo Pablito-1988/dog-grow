@@ -12,7 +12,7 @@ const Categories = () => {
             setCategories(data.items);
         }
         )
-    },[])
+    })
     console.log(categories)
     return (
         <div className='categoriesContainer'>
