@@ -7,8 +7,8 @@ const Product = (props) => {
         <div className='productContainer'>
             <img className='productMainImg' src={props.imagen} alt={props.categoria} />
             <p>{props.nombre}</p>
-            <Link >
-            <button>Mas info</button>
+            <Link to={`/producto/${props.nombre}`} >
+            <button className='moreInfoButton'>Mas info</button>
             </Link>
         </div>
     );

@@ -8,6 +8,7 @@ import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Categories from "./components/Products/Categories"
 import Productos from "./components/Products/Products"
+import ProductDetail from "./components/Products/ProductDetail"
 import { Switch, Route } from "react-router-dom";
 
 
@@ -23,7 +24,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/catalogo" component={Categories} />
         <Route path="/categoria/:categoria" component={Productos} />
-
+        <Route path="/producto/:producto" component={ProductDetail} />
       </Switch>
       <Footer />
     </div>
