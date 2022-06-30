@@ -111,8 +111,9 @@
 }
 
 .orderButton{
-    width: 10rem;
-    height: 2.5rem;
+    width: 11rem;
+    height: 3rem;
+    font-size: 16px;
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 40px;

@@ -72,10 +72,10 @@ const ProductDetail = () => {
           </div>
           <div>
             <button className="orderButton"> <a
-              href="https://wa.me/5491165480864"
+              href={`https://wa.me/5491165480864?text=Me%20interesa%20este%20producto:%20${product[0].productName}`}
               target={"_blank"}
               rel="noreferrer"
-            >REALIZAR PEDIDO</a></button>
+            >QUIERO ESTE PRODUCTO</a></button>
           </div>
         </>
       )}
