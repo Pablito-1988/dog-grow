@@ -12,6 +12,7 @@ const ProductDetail = () => {
           where: {productName : "${item.producto}"}
         ){
           items{
+            price
             productName
             productCategory
             productDescription
@@ -51,12 +52,6 @@ const ProductDetail = () => {
       ) : (
         <>
           <div className="imageContainer">
-            <img
-              className="productImg"
-              src={product[0].productMainImg.url}
-              alt={product[0].productCategory}
-            />
-          </div>
           <div className="pathLinks">
             <p className="pathItem">
               <Link to={"/"}>INICIO</Link> /<Link to={"/catalogo"}>CATEGORIAS</Link> /
@@ -64,11 +59,19 @@ const ProductDetail = () => {
               {product[0].productName}
             </p>
           </div>
-          <span className="divisor"></span>
+            <img
+              className="productImg"
+              src={product[0].productMainImg.url}
+              alt={product[0].productCategory}
+            />
+          </div>
+          {/* <span className="divisor"></span> */}
           <div className="productData">
             <p className="productName">{product[0].productName}</p>
-            <span className="smallDivisor"></span>
+            <p className="productName">${product[0].price}</p>
+            <span className="divisor"></span>
             <p>Descripción: {product[0].productDescription}</p>
+            
           </div>
           <div>
             <button className="orderButton"> <a
