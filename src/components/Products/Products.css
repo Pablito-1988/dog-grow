@@ -109,3 +109,13 @@
     border: 1px solid white;
     margin-top: 10px;
 }
+
+.orderButton{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: #00bcd4;
+    color: white;
+}

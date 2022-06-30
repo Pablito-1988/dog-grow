@@ -3,6 +3,7 @@ header{
     align-items: center;
     flex-direction: row;
     padding-top: 10px;
+    border-bottom: 1px solid white;
 }
 .logoImg{
     width: 100px;
@@ -53,7 +54,7 @@ a{
     flex-direction: column;
     width: 100%;
     animation-name: apear;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 @keyframes apear{

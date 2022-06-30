@@ -70,6 +70,13 @@ const ProductDetail = () => {
             <span className="smallDivisor"></span>
             <p>Descripción: {product[0].productDescription}</p>
           </div>
+          <div>
+            <button className="orderButton"> <a
+              href="https://wa.me/5491165480864"
+              target={"_blank"}
+              rel="noreferrer"
+            >REALIZAR PEDIDO</a></button>
+          </div>
         </>
       )}
     </div>
