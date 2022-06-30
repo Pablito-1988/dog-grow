@@ -57,10 +57,10 @@ const ProductDetail = () => {
               alt={product[0].productCategory}
             />
           </div>
-          <div>
+          <div className="pathLinks">
             <p className="pathItem">
-              <Link>INICIO</Link> / <Link>CATEGORIAS</Link> /{" "}
-              <Link>{product[0].productCategory}</Link> /{" "}
+              <Link to={"/"}>INICIO</Link> /<Link to={"/catalogo"}>CATEGORIAS</Link> /
+              <Link to={`/categoria/${product[0].productCategory}`}>{product[0].productCategory}</Link> / 
               {product[0].productName}
             </p>
           </div>

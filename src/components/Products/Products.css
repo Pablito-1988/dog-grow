@@ -76,6 +76,12 @@
     width: 90%;
     border-radius: 5px;
 }
+.pathLinks{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+
+}
 .pathItem{
     text-transform: uppercase;
     color: white;
