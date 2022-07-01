@@ -1,15 +1,20 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../assets/images/DogPNG.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [DropdownMenu, setDropdown] = useState(false);
-
+  const dropdownRef = useRef(null);
   const handleDropdown = () => {
     setDropdown(!DropdownMenu);
+    if(DropdownMenu === true) {
+    dropdownRef.current.style.transform = "rotate(0deg)";
+    }else{
+      dropdownRef.current.style.transform = "rotate(180deg)";
+    }
   };
 
   return (
@@ -22,7 +27,11 @@ const Header = () => {
               id="burgerMenu"
               className="fas fa-bars"
             ></i>
-            {/* <p className="burguerQuote">Menú</p> */}
+            <i
+              ref={dropdownRef}
+              id="arrowMenu"
+              className="fas fa-angle-down"
+            ></i>
           </div>
         </div>
         <div className="headerLogo">

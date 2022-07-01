@@ -80,6 +80,7 @@
     display: flex;
     width: 95%;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .pathItem{
@@ -109,7 +110,10 @@
     border: 1px solid white;
     margin-top: 10px;
 }
-
+.productDescription{
+    margin: 15px 0px;
+    font-size: 20px;
+}
 .orderButton{
     width: 11rem;
     height: 3rem;

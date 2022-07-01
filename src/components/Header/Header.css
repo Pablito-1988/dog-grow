@@ -34,13 +34,23 @@ a{
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
+    gap: 10px;
 }
+
 
 #burgerMenu{
     font-size: 24px;
-    color: rgb(229, 57,57);
-    
+    color: rgb(229, 57,57);    
 }
+#arrowMenu{
+    font-size: 24px;
+    color: rgb(229, 57,57);  
+    transition: 0.5s;  
+}
+
+    
+
+
 .burguerQuote{
     font-size: 16px
 }
