@@ -35,6 +35,7 @@ a{
     align-items: flex-end;
     justify-content: space-around;
     gap: 10px;
+    padding-left: 10px;
 }
 
 
