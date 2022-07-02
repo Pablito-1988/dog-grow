@@ -54,9 +54,9 @@ const ProductDetail = () => {
           <div className="imageContainer">
           <div className="pathLinks">
             <p className="pathItem">
-              <Link to={"/"}>INICIO</Link> /<Link to={"/catalogo"}>CATEGORIAS</Link> /
-              <Link to={`/categoria/${product[0].productCategory}`}>{product[0].productCategory}</Link> / 
-              {product[0].productName}
+              <Link to={"/"}>INICIO</Link> / <Link to={"/catalogo"}>CATEGORIAS</Link> / 
+              <Link to={`/categoria/${product[0].productCategory}`}> {product[0].productCategory}</Link> /  
+               {" "}{product[0].productName}
             </p>
           </div>
             <img

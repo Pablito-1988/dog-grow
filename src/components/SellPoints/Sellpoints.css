@@ -11,7 +11,7 @@
     width: 95%;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
@@ -27,11 +27,22 @@
     align-items: left;
     width: 100%;
 }
+.sellPointAdress{
+    font-size: 21px;
+}
+.sellPointPhone{
+    font-size: 20px;
+}
 .sellPointSocial{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#sellPointsIcons{
+    font-size: 20px;
+    color: #e6e6e6;
 }
