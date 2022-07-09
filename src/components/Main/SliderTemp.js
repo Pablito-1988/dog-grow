@@ -1,0 +1,53 @@
+import React from "react";
+import { useEffect, useState } from "react";
+
+const SliderTemp = (props) => {
+  const images = props.images;
+  
+  const [slideIndex, setSlideIndex] = useState(1);
+  const [sliderTime, setSliderTime] = useState(5000);
+
+  const moveDot = (index) => {
+    setSlideIndex(index);
+    setSliderTime(5000);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      slideIndex === images.length
+        ? setSlideIndex(1)
+        : setSlideIndex(slideIndex + 1);
+    }, sliderTime);
+    return () => clearInterval(interval);
+  });
+
+  return (
+    <>
+      {images.map((image, index) => {
+        return (
+          <li
+            key={image.id}
+            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+          >
+            <img
+              src={image.sliderImg.url}
+              alt="Jenny Panichi"
+              className="logoImg"
+            />
+          </li>
+        );
+      })}
+      <div className="container-dots">
+        {images.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => moveDot(index + 1)}
+            className={slideIndex === index + 1 ? "dot active" : "dot"}
+          ></div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default SliderTemp;

@@ -1,66 +1,50 @@
 import React from "react";
-import slider1 from "../../assets/images/1.jpg";
-import slider2 from "../../assets/images/2.jpg";
-import slider3 from "../../assets/images/3.jpg";
-import slider4 from "../../assets/images/4.jpg";
 import { useEffect, useState } from "react";
+import SliderTemp from "./SliderTemp";
 import "./Slider.css"
 
 const Slider = () => {
-  const images = [
-    { slider: slider1, id: 1 },
-    { slider: slider2, id: 2 },
-    { slider: slider3, id: 3 },
-    { slider: slider4, id: 4 },
-  ];
-  const [slideIndex, setSlideIndex] = useState(1);
-  const [sliderTime, setSliderTime] = useState(5000);
-
-  const moveDot = (index) => {
-    setSlideIndex(index);
-    setSliderTime(5000);
-  };
-
+    const [sliderImage, setsliderImage] = useState([]);
+  const spaceId = "f5klpei59l37";
+  const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
+  const query = `query{
+    sliderCollection{
+      items{
+        sliderImg{
+          url
+        }
+      }
+    }
+  }`;
   useEffect(() => {
-    const interval = setInterval(() => {
-      slideIndex === images.length
-        ? setSlideIndex(1)
-        : setSlideIndex(slideIndex + 1);
-    }, sliderTime);
-    return () => clearInterval(interval);
-  }, [slideIndex, sliderTime, images.length]);
+    window
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`,
+        },
+        body: JSON.stringify({ query }),
+      })
+      .then((response) => response.json())
+      .then(({ data, errors }) => {
+        if (errors) {
+          console.error(errors);
+        }
+        setsliderImage(data.sliderCollection.items);
+      });
+  }, [accessToken, spaceId, query]);
+  console.log(sliderImage);
+  
+  
 
   return (
     <>
     <div className="sliderContainer">
       <div className="slider">
         <ul>
-          {images.map((image, index) => {
-            return (
-              <li
-                key={image.id}
-                className={
-                  slideIndex === index + 1 ? "slide active-anim" : "slide"
-                }
-              >
-                <img
-                  src={image.slider}
-                  alt="Jenny Panichi"
-                  className="logoImg"
-                />
-              </li>
-            );
-          })}
+         {sliderImage.length > 0 ? <SliderTemp images= {sliderImage} /> : <p>Cargando</p>} 
         </ul>
-      </div>
-      <div className="container-dots">
-        {Array.from({ length: 4 }).map((item, index) => (
-          <div
-            key={index}
-            onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? "dot active" : "dot"}
-          ></div>
-        ))}
       </div>
     </div>
   </>
