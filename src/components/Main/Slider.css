@@ -29,7 +29,7 @@
 .container-dots {
     position: absolute;
     top: 25.5rem;
-    left: 12.5rem;
+    left: 12rem;
     transform: translateX(-50%);
     display: flex;
   }
@@ -38,7 +38,7 @@
     height: 10px;
     border-radius: 25%;
     border: 3px solid #f1f1f1;
-    margin: 0 5px;
+    margin: 0 6px;
     background: black;
   }
   .dot.active {

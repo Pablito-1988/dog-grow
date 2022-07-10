@@ -65,7 +65,10 @@ a{
     flex-direction: column;
     width: 100%;
     animation-name: apear;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    position: absolute;
+    z-index: 999;
+   background-color: rgba(0, 0,0, 0.5);
 }
 
 @keyframes apear{
@@ -83,5 +86,6 @@ a{
 }
 .navLink:hover{
     color: green;
+    text-decoration: dashed;
 }
 
