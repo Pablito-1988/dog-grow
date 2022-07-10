@@ -35,7 +35,7 @@ const SliderTemp = (props) => {
             >
               <img
                 src={image.sliderImg.url}
-                alt="Jenny Panichi"
+                alt="Dog Grow"
                 className="logoImg"
                 key={index}
               />
