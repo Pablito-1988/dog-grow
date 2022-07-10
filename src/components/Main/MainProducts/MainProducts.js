@@ -55,6 +55,7 @@ const MainProducts = () => {
               categoria={product.productCategory}
               descripcion={product.productDescription}
               imagen={product.productMainImg.url}
+                precio={product.price}
             />
           );
         })}
