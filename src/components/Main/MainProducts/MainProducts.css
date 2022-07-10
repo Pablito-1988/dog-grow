@@ -16,7 +16,7 @@
 
 }
 .mainProductContainer{
-    width: 40%;
+    width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,4 +26,17 @@
 .mainProductMainImg{
     width: 10rem;
     height: 10rem;
+    border-radius: 5%;
+}
+.mainProductInfoPrice{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainProductInfoName{
+    font-size: 18px;
+}
+.moreInfoButtonContainer{
+    width: 100%;
+    margin-top: 10px;
 }
