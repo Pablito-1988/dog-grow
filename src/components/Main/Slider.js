@@ -36,7 +36,6 @@ const Slider = () => {
   }, [accessToken, spaceId, query]);
   console.log(sliderImage);
   
-  
 
   return (
     <>
@@ -46,6 +45,7 @@ const Slider = () => {
          {sliderImage.length > 0 ? <SliderTemp  images= {sliderImage} /> : <p>Cargando</p>} 
         </ul>
       </div>
+      
     </div>
   </>
   );
