@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const SliderTemp = (props) => {
   const images = props.images;
-  
+
   const [slideIndex, setSlideIndex] = useState(1);
   const [sliderTime, setSliderTime] = useState(5000);
 
@@ -23,21 +23,26 @@ const SliderTemp = (props) => {
 
   return (
     <>
-      {images.map((image, index) => {
-        return (
-          <li
-            key={index}
-            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-          >
-            <img
-              src={image.sliderImg.url}
-              alt="Jenny Panichi"
-              className="logoImg"
+      <ul>
+        {images.map((image, index) => {
+          return (
+            <li
               key={index}
-            />
-          </li>
-        );
-      })}
+              className={
+                slideIndex === index + 1 ? "slide active-anim" : null
+              }
+              
+            >
+              <img
+                src={image.sliderImg.url}
+                alt="Jenny Panichi"
+                className="logoImg"
+                key={index}
+              />
+            </li>
+          );
+        })}
+      </ul>
       <div className="container-dots">
         {images.map((item, index) => (
           <div

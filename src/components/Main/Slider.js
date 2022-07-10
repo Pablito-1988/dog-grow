@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import SliderTemp from "./SliderTemp";
-import "./Slider.css"
+import "./Slider.css";
 
 const Slider = () => {
-    const [sliderImage, setsliderImage] = useState([]);
+  const [sliderImage, setsliderImage] = useState([]);
   const spaceId = "f5klpei59l37";
   const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
   const query = `query{
@@ -35,19 +35,22 @@ const Slider = () => {
       });
   }, [accessToken, spaceId, query]);
   console.log(sliderImage);
-  
+
+ 
 
   return (
     <>
-    <div className="sliderContainer">
-      <div className="slider">
-        <ul>
-         {sliderImage.length > 0 ? <SliderTemp  images= {sliderImage} /> : <p>Cargando</p>} 
-        </ul>
+      <div className="sliderContainer">
+        <div className="slider">
+          {sliderImage.length > 0 ? (
+            <SliderTemp images={sliderImage} />
+          ) : (
+            <p>Cargando</p>
+          )}
+        </div>
+        <p>hola</p>
       </div>
-      
-    </div>
-  </>
+    </>
   );
 };
 
