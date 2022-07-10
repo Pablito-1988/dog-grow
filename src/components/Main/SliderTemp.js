@@ -26,13 +26,14 @@ const SliderTemp = (props) => {
       {images.map((image, index) => {
         return (
           <li
-            key={image.id}
+            key={index}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
             <img
               src={image.sliderImg.url}
               alt="Jenny Panichi"
               className="logoImg"
+              key={index}
             />
           </li>
         );

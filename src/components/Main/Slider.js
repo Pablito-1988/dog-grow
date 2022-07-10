@@ -43,7 +43,7 @@ const Slider = () => {
     <div className="sliderContainer">
       <div className="slider">
         <ul>
-         {sliderImage.length > 0 ? <SliderTemp images= {sliderImage} /> : <p>Cargando</p>} 
+         {sliderImage.length > 0 ? <SliderTemp  images= {sliderImage} /> : <p>Cargando</p>} 
         </ul>
       </div>
     </div>
