@@ -48,7 +48,7 @@ const Slider = () => {
             <p>Cargando</p>
           )}
         </div>
-        <p>hola</p>
+        
       </div>
     </>
   );

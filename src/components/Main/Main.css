@@ -2,3 +2,19 @@
     width:100%;
     /* height:20rem */
 }
+.bannerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 3rem;
+    background-color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.MainProducts{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
