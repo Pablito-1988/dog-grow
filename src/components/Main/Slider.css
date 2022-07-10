@@ -28,8 +28,8 @@
 
 .container-dots {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 30rem;
+    left: 13.5rem;
     transform: translateX(-50%);
     display: flex;
   }
