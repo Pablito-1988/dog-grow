@@ -53,15 +53,15 @@ const ProductDetail = () => {
         <>
           <div className='imageContainer'>
             <div className='pathLinks'>
-              <p className='pathItem'>
-                <Link to={'/'}>INICIO</Link> /{' '}
+              <div className='pathItem'>
+                <Link to={'/'}>INICIO</Link>/{' '}
                 <Link to={'/catalogo'}>CATEGORIAS</Link> /
                 <Link to={`/categoria/${product[0].productCategory}`}>
                   {' '}
                   {product[0].productCategory}
                 </Link>{' '}
                 / {product[0].productName}
-              </p>
+              </div>
             </div>
             <img
               className='productImg'
@@ -75,7 +75,7 @@ const ProductDetail = () => {
             <p className='productPrice'>$ {product[0].price}</p>
             <span className='divisor'></span>
             <p className='productDescription'>
-              Descripción: {product[0].productDescription}
+              {product[0].productDescription}
             </p>
           </div>
           <div>

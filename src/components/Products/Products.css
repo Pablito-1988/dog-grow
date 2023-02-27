@@ -79,6 +79,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 5rem;
 }
 .imageContainer{
     display: flex;
@@ -98,6 +99,7 @@
 
 }
 .pathItem{
+    
     text-transform: uppercase;
     color: white;
     margin-bottom: 15px;
@@ -121,6 +123,9 @@
     font-size: 24px;
     font-weight: bold;
 }
+.productPrice{
+  font-size: 24px;
+}
 .productDetailName{
   font-family: 'Benoa-regular';
   font-size: 30px;
@@ -132,7 +137,7 @@
     margin-top: 10px;
 }
 .productDescription{
-  font-family: 'Benoa';
+  font-family: 'Benoa-regular';
     margin: 15px 0px;
     font-size: 20px;
 }
