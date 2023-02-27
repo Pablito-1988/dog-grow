@@ -11,9 +11,17 @@
     align-items: center;
     margin: 20px;
 }
+.categoriesMainTitle{
+  font-family: 'Funny-munk';
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
 .categoryName{
+    font-family: 'Benoa-bold';
     margin-bottom: 5px;
     font-size: 25px;
+    color: white;
+  -webkit-text-stroke: 1px black;
 }
 .categoryImg{
     width: 300px;
