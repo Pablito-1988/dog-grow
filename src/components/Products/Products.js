@@ -46,7 +46,7 @@ const Products = () => {
   console.log(products);
   return (
     <div className="productsWrapper">
-      <h1>{category.categoria}</h1>
+      <h1 className="categoryName">{category.categoria}</h1>
       <div className="allProducts">
         {products.map((product) => {
           return (
