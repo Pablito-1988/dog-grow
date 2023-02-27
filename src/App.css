@@ -1,5 +1,10 @@
+/* @font-face{
+  font-family: 'Benoa';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-regular.otf');
+}
+ */
 .AppContainer{
-    font-family: 'Rubik', sans-serif;
+    font-family:  sans-serif;
     font-weight: 500;
 
     

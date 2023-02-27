@@ -34,7 +34,7 @@ const Slider = () => {
         setsliderImage(data.sliderCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  console.log(sliderImage);
+  
 
  
 

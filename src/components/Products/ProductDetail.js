@@ -68,7 +68,7 @@ const ProductDetail = () => {
           {/* <span className="divisor"></span> */}
           <div className="productData">
             <p className="productName">{product[0].productName}</p>
-            <p className="productName">${product[0].price}</p>
+            <p className="productPrice">$ {product[0].price}</p>
             <span className="divisor"></span>
             <p className="productDescription">Descripción: {product[0].productDescription}</p>
             
