@@ -101,12 +101,9 @@
     flex-direction: column;
     margin-top: 10px;
 }
-@font-face{
-  font-family: 'Benoa';
-  src: url('../../assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-regular.otf');
-}
+
 .productName{
-    font-family: 'Benoa';
+    font-family: 'Benoa-regular';
     font-size: 30px;
     font-weight: bold;
 }

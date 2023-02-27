@@ -10,7 +10,7 @@ const Main = () => {
         <Slider />
       </div>
       <div className="bannerContainer">
-        <p>¡ENVIOS A TODO EL PAIS!</p>
+       <p>ENVIOS A TODO EL PAIS</p>
       </div>
       <div className="MainProducts">
         <MainProducts />

@@ -1,43 +1,44 @@
-.MainProductsContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-
+.MainProductsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
-.ProductsWrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-
+.ProductsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
-.mainProductContainer{
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-
+.mainProductContainer {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.mainProductMainImg{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 5%;
+.mainProductsTitle{
+  font-family: 'Funny-munk';
 }
-.mainProductInfoPrice{
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
+.mainProductMainImg {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5%;
 }
-.mainProductInfoName{
-    font-size: 18px;
+.mainProductInfoPrice {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.moreInfoButtonContainer{
-    width: 100%;
-    margin-top: 10px;
+.mainProductInfoName {
+  font-family: 'Benoa-regular';
+  font-size: 18px;
+}
+.moreInfoButtonContainer {
+  width: 100%;
+  margin-top: 10px;
 }

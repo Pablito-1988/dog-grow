@@ -12,3 +12,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face{
+  font-family: 'Benoa-regular';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-regular.otf');
+}
+@font-face{
+  font-family: 'Benoa-black';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-black.otf');
+}
+@font-face{
+  font-family: 'Benoa-bold';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-bold.otf');
+}
+@font-face{
+  font-family: 'Benoa-light';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-light.otf');
+}
+@font-face{
+  font-family: 'Benoa-medium';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-medium.otf');
+}
+@font-face{
+  font-family: 'Benoa-thin';
+  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-thin.otf');
+}
+@font-face{
+  font-family: 'Funny-munk';
+  src: url('/src/assets/fonts/Funny-Munk-Font/Funny-munk.otf');
+}
