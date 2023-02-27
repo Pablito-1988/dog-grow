@@ -50,12 +50,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .productMainImg{
-    width: 150px;
-    height: 150px;
+    width: 11rem;
+    height: 11rem;
     border-radius: 5%;
     
 }
