@@ -1,4 +1,9 @@
-
+.sellPointsTitle{
+  font-family: 'Funny-munk';
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 40px;
+}
 .sellPointsWrapper{
     width: 100%;
     display: flex;

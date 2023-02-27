@@ -5,7 +5,7 @@ const Dropdown = (props) => {
 
     return (
         <div className='dropDownContent'>
-            <Link onClick={props.change} className='navLink' to="/catalogo">CATALOGO</Link>
+            <Link onClick={props.change} className='navLink' to="/catalogo">CATEGORIAS</Link>
             <Link onClick={props.change} className='navLink' to="/edu">EDU</Link>
             <Link onClick={props.change} className='navLink' to="/sell-points">PUNTOS DE VENTA</Link>
             <Link onClick={props.change} className='navLink' to="/contact">CONTACTO</Link>

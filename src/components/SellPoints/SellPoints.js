@@ -50,7 +50,7 @@ const SellPoints = () => {
 
   return (
     < div className="sellPointsWrapper">
-      <h1>PUNTOS DE VENTA</h1>
+      <h1 className="sellPointsTitle">PUNTOS DE VENTA</h1>
       <SellPoint info={sellPoints[0]} />
     </div>
   );
