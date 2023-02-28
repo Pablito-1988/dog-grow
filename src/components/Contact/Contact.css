@@ -55,11 +55,11 @@ textarea{
     height: 40px;
     border-radius: 5px;
     font-size: 18px;
-    background-color: rgb(11, 155,242);
+    background-color: #00AEE7;
     color: #fff;
     font-family: 'Benoa-regular';
 }
 .contactButton:hover{
     background-color: #fff;
-    color: green;
+    color: #1BA74A;
 }

@@ -12,9 +12,9 @@ const SellPoint = (props) => {
   } else {
     return (
       <div className="sellPointContainer">
-        <h2>{data.shopName}</h2>
+        <h2 className="sellPointName">{data.shopName}</h2>
         <a
-          href="https://goo.gl/maps/h35yZF3RWbr6UsFv7"
+          href={data.googleMapsUrl}
           target="_blank"
           rel="noreferrer"
         >

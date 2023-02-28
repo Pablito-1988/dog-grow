@@ -23,6 +23,9 @@ const SellPoints = () => {
             map{
               url
             }
+            googleMapsUrl
+
+            
             
           }
         }
@@ -51,7 +54,10 @@ const SellPoints = () => {
   return (
     < div className="sellPointsWrapper">
       <h1 className="sellPointsTitle">PUNTOS DE VENTA</h1>
-      <SellPoint info={sellPoints[0]} />
+      {sellPoints.map((e, i)=>{
+        return <SellPoint key={i} info={e} />
+      })}
+      
     </div>
   );
 };
