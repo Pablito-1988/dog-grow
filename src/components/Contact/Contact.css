@@ -4,7 +4,14 @@
     width: 100%;
     align-items: center;
     margin-bottom: 50px;
+    font-family: 'Benoa-regular';
     
+}
+.contactTitle{
+  font-family: 'Funny-munk';
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 40px;
 }
 .contactQuote{
     font-size: 18px;
@@ -34,6 +41,7 @@
 textarea{
     border-radius: 5px;
     font-size: 14px;
+    
 }
 .submitButton{
     width: 100%;
@@ -49,6 +57,7 @@ textarea{
     font-size: 18px;
     background-color: rgb(11, 155,242);
     color: #fff;
+    font-family: 'Benoa-regular';
 }
 .contactButton:hover{
     background-color: #fff;
