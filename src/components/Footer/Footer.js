@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="shipContainer">
+        {/* <div className="shipContainer">
           <i className="fas fa-truck"></i>
           <p className="shipText">¡ENVIOS A TODO EL PAIS!</p>
-        </div>
+        </div> */}
         <div className="contact">
           <p>CONTACTO</p>
           <div className="contactLinks">
