@@ -1,93 +1,116 @@
-header{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 10px;
-    
+header {
+  display: flex;
+  align-items: column;
+  flex-direction: row;
+  padding-top: 10px;
 }
-.logoImg{
-    width: 100px;
-    height: 100px;
+.mobileHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-a{  
-    
-    text-decoration: none;
-    color: #fff;
+.desktopHeader {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.headerLogo{
-    width: 33%;
-    display: flex;
-    justify-content: center;
-
+.desktopLinks {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.headerContainer{
-    width: 33%;
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
+.logoImg {
+  width: 100px;
+  height: 100px;
 }
-.headerSpace{
-    width: 33%;
+a {
+  text-decoration: none;
+  color: #fff;
 }
-
-.iconContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
-    gap: 10px;
-    padding-left: 10px;
+.headerLogo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
 }
-
-
-#burgerMenu{
-    font-size: 24px;
-    color: rgb(229, 57,57);    
+.headerContainer {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
 }
-#arrowMenu{
-    font-size: 24px;
-    color: rgb(229, 57,57);  
-    transition: 0.5s;  
+.headerSpace {
+  width: 33%;
 }
 
-    
-
-
-.burguerQuote{
-    font-size: 16px
-}
-.menuButton{
-    background-color: transparent;
-    border: none;
-}
-.dropDownContent{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    animation-name: apear;
-    /* border-bottom: 1px solid white; */
-    position: absolute;
-    z-index: 999;
-   background-color: rgba(0, 0,0, 0.5);
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 10px;
+  padding-left: 10px;
 }
 
-@keyframes apear{
-    0%{
-      height: 0vh;
-    }
-    100%{
-        height: 15vh;
-    }
+#burgerMenu {
+  font-size: 24px;
+  color: rgb(229, 57, 57);
+}
+#arrowMenu {
+  font-size: 24px;
+  color: rgb(229, 57, 57);
+  transition: 0.5s;
 }
 
-.navLink{
+.burguerQuote {
+  font-size: 16px;
+}
+.menuButton {
+  background-color: transparent;
+  border: none;
+}
+.dropDownContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  animation-name: apear;
+  /* border-bottom: 1px solid white; */
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes apear {
+  0% {
+    height: 0vh;
+  }
+  100% {
+    height: 15vh;
+  }
+}
+
+.navLink {
   font-family: 'Funny-munk';
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1px black;
 }
-.navLink:hover{
-    color: green;
-    text-decoration: dashed;
+.navLink:hover {
+  color: green;
+  text-decoration: dashed;
 }
 
+@media only screen and (min-width: 992px) {
+  .mobileHeader {
+    display: none;
+  }
+  .desktopHeader{
+    display: flex;
+  }
+}
