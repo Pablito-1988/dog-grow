@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="shipText">¡ENVIOS A TODO EL PAIS!</p>
         </div> */}
         <div className="contact">
-          <p>CONTACTO</p>
+          <p className="footerSection">CONTACTO</p>
           <div className="contactLinks">
             <a
               href="https://wa.me/5491165480864"
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="socialMedia">
-          <p>REDES SOCIALES</p>
+          <p className="footerSection">REDES SOCIALES</p>
           <div className="socialLinks">
             <i className="fab fa-instagram"></i>
             <i className="fab fa-facebook"></i>

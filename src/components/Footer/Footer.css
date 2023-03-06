@@ -1,7 +1,5 @@
 
- p{
-    margin: 0;
- }
+
  footer{
     display: flex;
     width: 100%;
@@ -10,6 +8,9 @@
     margin-top: 30px;
     border-top: 1px solid white;
 
+ }
+ .footerSection{
+  font-family: 'Benoa-regular';
  }
  .shipContainer{
     display: flex;
@@ -60,10 +61,12 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    font-size: 20px;
  }
  .copyText{
-    font-size: 16px;
+    font-size: 20px;
     color: #ecf0f1;
+    margin: 0;
  }
  
  #weed{
@@ -79,4 +82,22 @@
     50%{font-size: 10px;}
     75%{font-size: 20px;}
     100%{font-size: 10px;}
+}
+
+@media only screen and (min-width: 992px) {
+  footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    justify-content: space-around;
+  }
+  .contact{
+    margin-top: 0;
+  }
+  .socialMedia{
+    margin-top: 0;
+  }
 }
