@@ -47,3 +47,8 @@
   /* width: 90%; */
   margin-top: 10px;
 }
+@media only screen and (min-width: 992px) {
+  .mainProductContainer{
+    width: 25%;
+  }
+}

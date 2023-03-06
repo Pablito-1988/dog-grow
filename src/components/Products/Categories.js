@@ -45,10 +45,13 @@ const Categories = () => {
     return (
         <div className='categoriesContainer'>
             <h1 className='categoriesMainTitle'>CATEGORIAS</h1>
-            {page && page.map(category => {
+            <div className='categoriesWrapper'>
+              {page && page.map(category => {
                 return (<Category key={category.categoryName} nombre={category.categoryName} imagen={category.categoryImage.url} />)
             }
             )}
+            </div>
+            
         </div>
     );
 };
