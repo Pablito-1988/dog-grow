@@ -1,60 +1,85 @@
-.sellPointsTitle{
+.sellPointsTitle {
   font-family: 'Funny-munk';
   color: white;
   -webkit-text-stroke: 1px black;
   font-size: 40px;
 }
-.sellPointsWrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sellPointsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.sellPointContainer{
+.sellPointsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sellPointContainer {
   display: flex;
   width: 95%;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 20px; */
   margin-bottom: 5rem;
   padding: 5px;
-  /* border-radius: 5px; */
-  /* border: 1px solid #e6e6e6; */
   border-bottom: 1px solid white;
 }
-.sellPointName{
+.sellPointName {
   font-family: 'Benoa-regular';
 }
-.locationMap{
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.locationMap {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-.sellPointData{
+.sellPointData {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+.sellPointAdress {
+  font-size: 21px;
+}
+.sellPointPhone {
+  font-size: 20px;
+}
+.sellPointSocial {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#sellPointsIcons {
+  font-size: 20px;
+  color: #e6e6e6;
+}
+
+@media only screen and (min-width: 992px) {
+  .sellPointsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .sellPointContainer {
+    width: 35%;
+    border: 1px solid white;
+  }
+  .locationMap {
+    width: 400px;
+    height: 200px;
+  }
+  .sellPointData {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    width: 100%;
-    
-}
-.sellPointAdress{
-    font-size: 21px;
-}
-.sellPointPhone{
-    font-size: 20px;
-}
-.sellPointSocial{
-    display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-#sellPointsIcons{
-    font-size: 20px;
-    color: #e6e6e6;
+    width: 100%;
+  }
 }

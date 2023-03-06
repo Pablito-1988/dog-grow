@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -14,8 +14,11 @@
   align-items: center;
   width: 100%;
 }
+.linkContainer{
+  width: 35%;
+}
 .mainProductContainer {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,10 +41,12 @@
   margin-top: 5px;
   font-size: 20px;
   font-weight: bold;
+  margin: 0;
 }
 .mainProductInfoName {
   font-family: 'Benoa-regular';
   font-size: 18px;
+  margin: 0;
 }
 .moreInfoButtonContainer {
   /* width: 90%; */
@@ -49,6 +54,11 @@
 }
 @media only screen and (min-width: 992px) {
   .mainProductContainer{
+    width: 100%;
+  }
+  .linkContainer{
+    display: flex;
     width: 25%;
   }
+  
 }

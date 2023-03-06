@@ -1,12 +1,12 @@
-import React from "react";
-import SellPoint from "./SellPoint";
-import "./Sellpoints.css";
-import { useState, useEffect } from "react";
+import React from 'react';
+import SellPoint from './SellPoint';
+import './Sellpoints.css';
+import { useState, useEffect } from 'react';
 
 const SellPoints = () => {
   const [sellPoints, setSellPoints] = useState([]);
-  const spaceId = "f5klpei59l37";
-  const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
+  const spaceId = 'f5klpei59l37';
+  const accessToken = 'qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ';
   const query = `query{
         sellPointCollection{
           items{
@@ -34,9 +34,9 @@ const SellPoints = () => {
   useEffect(() => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
           Authorization: `Bearer ${accessToken}`,
         },
         body: JSON.stringify({ query }),
@@ -52,12 +52,18 @@ const SellPoints = () => {
   console.log(sellPoints);
 
   return (
-    < div className="sellPointsWrapper">
-      <h1 className="sellPointsTitle">PUNTOS DE VENTA</h1>
-      {sellPoints.map((e, i)=>{
-        return <SellPoint key={i} info={e} />
-      })}
-      
+    <div className='sellPointsWrapper'>
+      <h1 className='sellPointsTitle'>PUNTOS DE VENTA</h1>
+      <div className='sellPointsContainer'>
+        {sellPoints.map((e, i) => {
+          return (
+            <SellPoint
+              key={i}
+              info={e}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
