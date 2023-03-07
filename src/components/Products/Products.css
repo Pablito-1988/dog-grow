@@ -38,7 +38,7 @@
     transition: ease 0.5s;
 }
 .categoryImg:hover{
-  scale: 1.5;
+  scale: 1.3;
   box-shadow: 5px 5px 15px black;
 }
 
