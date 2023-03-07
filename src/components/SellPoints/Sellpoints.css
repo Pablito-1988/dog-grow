@@ -27,6 +27,12 @@
   border-radius: 5px;
   padding: 5px;
   border-bottom: 1px solid white;
+  background-color: rgba(0,0 ,0,0.3);
+  transition: ease 0.4s;
+}
+.sellPointContainer:hover{
+  scale: 1.1;
+  box-shadow: 5px 5px 10px black;
 }
 .sellPointName {
   font-family: 'Benoa-regular';
@@ -68,6 +74,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
   .sellPointContainer {
     width: 35%;

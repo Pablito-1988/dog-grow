@@ -71,6 +71,10 @@
     border-radius: 5%;
     
 }
+
+.productDetailButtonContainer{
+  text-align: center;
+}
 .moreInfoButton{
     width: 10rem;
     height: 35px;
@@ -125,7 +129,7 @@
 }
 .productData{
     display: flex;
-    width: 100%;
+    width: 99%;
     margin-left: 30px;
     flex-direction: column;
     margin-top: 10px;
