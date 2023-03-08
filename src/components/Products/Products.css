@@ -129,6 +129,7 @@
 }
 .dataGrapper{
   display: flex;
+  padding: 5%;
 }
 .productData{
     display: flex;
