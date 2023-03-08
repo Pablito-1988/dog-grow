@@ -40,6 +40,9 @@
     margin: 0 6px;
     background: black;
   }
+  .dot:hover{
+    cursor: pointer;
+  }
   .dot.active {
     background: #31da49
   }

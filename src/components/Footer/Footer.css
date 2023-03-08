@@ -11,6 +11,7 @@
  }
  .footerSection{
   font-family: 'Benoa-regular';
+  margin: 0;
  }
  .shipContainer{
     display: flex;
