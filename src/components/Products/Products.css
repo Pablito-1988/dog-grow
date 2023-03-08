@@ -127,6 +127,9 @@
    border: 1px solid white;
    margin-top: 10px;
 }
+.dataGrapper{
+  display: flex;
+}
 .productData{
     display: flex;
     width: 99%;

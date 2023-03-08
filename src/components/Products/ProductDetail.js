@@ -62,35 +62,36 @@ const ProductDetail = () => {
               / {product[0].productName}
             </div>
           </div>
-          <div className="imageContainer">
-            <img
-              className="productImg"
-              src={product[0].productMainImg.url}
-              alt={product[0].productCategory}
-            />
+          <div className="dataGrapper">
+            <div className="imageContainer">
+              <img
+                className="productImg"
+                src={product[0].productMainImg.url}
+                alt={product[0].productCategory}
+              />
+            </div>
+            {/* <span className="divisor"></span> */}
+            <div className="productData">
+              <p className="productDetailName">{product[0].productName}</p>
+              <p className="productPrice">${product[0].price}</p>
+              <span className="divisor"></span>
+              <p className="productDescription">
+                {product[0].productDescription}
+              </p>
+              <div className="productDetailButtonContainer">
+                <button className="orderButton">
+                  {" "}
+                  <a
+                    href={`https://wa.me/5491165480864?text=Me%20interesa%20este%20producto:%20${product[0].productName}`}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    QUIERO ESTE PRODUCTO
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-          {/* <span className="divisor"></span> */}
-          <div className="productData">
-            <p className="productDetailName">{product[0].productName}</p>
-            <p className="productPrice">${product[0].price}</p>
-            <span className="divisor"></span>
-            <p className="productDescription">
-              {product[0].productDescription}
-            </p>
-            <div className="productDetailButtonContainer">
-            <button className="orderButton">
-              {" "}
-              <a
-                href={`https://wa.me/5491165480864?text=Me%20interesa%20este%20producto:%20${product[0].productName}`}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                QUIERO ESTE PRODUCTO
-              </a>
-            </button>
-          </div>
-          </div>
-          
         </>
       )}
     </div>
