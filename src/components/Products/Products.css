@@ -130,6 +130,8 @@
 .dataGrapper{
   display: flex;
   padding: 5%;
+  flex-direction: column;
+  align-items: center;
 }
 .productData{
     display: flex;
@@ -162,6 +164,7 @@
   font-family: 'Benoa-regular';
     margin: 15px 0px;
     font-size: 20px;
+    padding: 5%;
 }
 .orderButton{
     width: 11rem;
@@ -197,5 +200,8 @@
   .productMainImg{
     width: 15rem;
     height: 15rem;
+  }
+  .dataGrapper{
+    flex-direction: row;
   }
 }
