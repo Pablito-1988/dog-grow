@@ -65,18 +65,6 @@ const Header = () => {
             </Link>
             <Link
               className='navLink'
-              to='/edu'
-            >
-              EDU
-            </Link>
-            <Link
-              className='navLink'
-              to='/sell-points'
-            >
-              PUNTOS DE VENTA
-            </Link>
-            <Link
-              className='navLink'
               to='/contact'
             >
               CONTACTO

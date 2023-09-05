@@ -14,7 +14,7 @@ code {
 }
 @font-face{
   font-family: 'Benoa-regular';
-  src: url('/src/assets/fonts/Benoa/Demo_Fonts/Fontspring-DEMO-benoa-regular.otf');
+  src: url('/src/assets/fonts/Benoa-Black.otf');
 }
 @font-face{
   font-family: 'Benoa-black';

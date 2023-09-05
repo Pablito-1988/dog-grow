@@ -45,7 +45,7 @@ const MainProducts = () => {
   return (
     <>
       <div className="MainProductsContainer">
-        <h1 className="mainProductsTitle">Productos destacados</h1>
+        <h1 className="mainProductsTitle">PRODUCTOS DESTACADOS</h1>
         <div className="ProductsWrapper">
         {products.map((product) => {
           return (
@@ -55,7 +55,6 @@ const MainProducts = () => {
               categoria={product.productCategory}
               descripcion={product.productDescription}
               imagen={product.productMainImg.url}
-                precio={product.price}
             />
           );
         })}

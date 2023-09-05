@@ -59,11 +59,11 @@ a {
 
 #burgerMenu {
   font-size: 24px;
-  color: rgb(229, 57, 57);
+  color: white
 }
 #arrowMenu {
   font-size: 24px;
-  color: rgb(229, 57, 57);
+  color: white;
   transition: 0.5s;
 }
 
@@ -83,7 +83,7 @@ a {
   /* border-bottom: 1px solid white; */
   position: absolute;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @keyframes apear {
@@ -96,7 +96,7 @@ a {
 }
 
 .navLink {
-  font-family: 'Funny-munk';
+  font-family: 'Benoa-bold';
   font-size: 20px;
   margin-bottom: 10px;
   -webkit-text-stroke: 1px black;

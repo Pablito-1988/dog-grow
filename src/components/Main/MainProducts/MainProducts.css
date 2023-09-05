@@ -14,9 +14,6 @@
   align-items: center;
   width: 100%;
 }
-.linkContainer{
-  width: 35%;
-}
 .mainProductContainer {
   width: 100%;
   display: flex;
@@ -26,7 +23,7 @@
   margin-bottom: 3rem;
 }
 .mainProductsTitle{
-  font-family: 'Funny-munk';
+  font-family: 'Benoa-bold';
   text-align: center;
   color: white;
   -webkit-text-stroke: 1px black;

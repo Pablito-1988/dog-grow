@@ -43,7 +43,13 @@ const ProductDetail = () => {
         setProduct(data.productCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  console.log(product);
+  function agregarSaltoDeLineaEnPuntos(texto) {
+    if(product){
+      const textoConSaltos = texto.replace(/\./g, '<br>');
+    return textoConSaltos;
+    }
+  }
+  const textoConSaltos = product ? agregarSaltoDeLineaEnPuntos(product[0].productDescription): null;
 
   return (
     <div className="productDetailContainer">
@@ -72,11 +78,8 @@ const ProductDetail = () => {
           {/* <span className="divisor"></span> */}
           <div className="productData">
             <p className="productDetailName">{product[0].productName}</p>
-            <p className="productPrice">${product[0].price}</p>
             <span className="divisor"></span>
-            <p className="productDescription">
-              {product[0].productDescription}
-            </p>
+            <div className="productDescription" dangerouslySetInnerHTML={{ __html: textoConSaltos }} />
             <div className="productDetailButtonContainer">
             <button className="orderButton">
               {" "}

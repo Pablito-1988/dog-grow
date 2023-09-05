@@ -1,13 +1,13 @@
-import React from "react";
-import Product from "./Product";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from 'react';
+import Product from './Product';
+import { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const category = useParams();
-  const spaceId = "f5klpei59l37";
-  const accessToken = "qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ";
+  const spaceId = 'f5klpei59l37';
+  const accessToken = 'qFP0gtMR5kSIym8b9moI0USNmXys6etjPY2_jDNGTjQ';
   const query = `query {
         productCollection(
           where: {productCategory : "${category.categoria}"}
@@ -28,9 +28,9 @@ const Products = () => {
   useEffect(() => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
           Authorization: `Bearer ${accessToken}`,
         },
         body: JSON.stringify({ query }),
@@ -45,9 +45,17 @@ const Products = () => {
   }, [accessToken, spaceId, query]);
   console.log(products);
   return (
-    <div className="productsWrapper">
-      <h1 className="categoryName">{category.categoria}</h1>
-      <div className="allProducts">
+    <div className='productsWrapper'>
+      <div className='pathLinks'>
+        <div className='pathItem'>
+          <Link to={'/'}>INICIO</Link>{' '}/{' '}
+          <Link to={'/catalogo'}>CATEGORIAS</Link>{' '}
+          
+        </div>
+      </div>
+      <h1 className='categoryName'>{category.categoria}</h1>
+      
+      <div className='allProducts'>
         {products.map((product) => {
           return (
             <Product

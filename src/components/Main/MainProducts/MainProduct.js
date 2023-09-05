@@ -13,7 +13,6 @@ const MainProduct = (props) => {
           alt={props.categoria}
         />
         <p className='mainProductInfoName'>{props.nombre}</p>
-        <p className='mainProductInfoPrice'>${props.precio}</p>
         <button className='moreInfoButton'>Mas info</button>
       </div>
     </Link>
