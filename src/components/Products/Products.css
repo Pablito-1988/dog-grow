@@ -123,6 +123,12 @@
    border: 1px solid white;
    margin-top: 10px;
 }
+.dataGrapper{
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+}
 .productData{
     display: flex;
     padding: 0 5%;
