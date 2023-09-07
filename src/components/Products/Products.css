@@ -61,6 +61,15 @@
     justify-content: center;
     margin: 3rem 0;
 }
+.oneproduct{
+  display:flex;
+  gap: 20px;
+  height: 50vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+}
 
 .productMainImg{
     width: 12rem;
@@ -150,6 +159,7 @@
   font-size: 30px;
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 .smallDivisor{
     width: 15%;
@@ -199,5 +209,11 @@
   }
   .productImg{
     width: 40%;
+  }
+  .pathLinks{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

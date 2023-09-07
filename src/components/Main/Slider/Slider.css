@@ -56,6 +56,12 @@
   .active-anim {
   opacity: 1;
 }
+.loading{
+  height: 500vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
 
 @media only screen and (min-width: 992px) {
 

@@ -50,12 +50,10 @@ const Products = () => {
         <div className='pathItem'>
           <Link to={'/'}>INICIO</Link>{' '}/{' '}
           <Link to={'/catalogo'}>CATEGORIAS</Link>{' '}
-          
         </div>
       </div>
       <h1 className='categoryName'>{category.categoria}</h1>
-      
-      <div className='allProducts'>
+      <div className={products.length <= 2 ? 'oneproduct': 'allProducts' }>
         {products.map((product) => {
           return (
             <Product

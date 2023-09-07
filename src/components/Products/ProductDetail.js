@@ -43,6 +43,8 @@ const ProductDetail = () => {
         setProduct(data.productCollection.items);
       });
   }, [accessToken, spaceId, query]);
+
+  
   function agregarSaltoDeLineaEnPuntos(texto) {
     if(product){
       const textoConSaltos = texto.replace(/\./g, '<br>');

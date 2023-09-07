@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import SliderTemp from "./SliderTemp";
 import "./Slider.css";
 
+
 const Slider = () => {
   const [sliderImage, setsliderImage] = useState([]);
   const spaceId = "f5klpei59l37";
@@ -45,7 +46,7 @@ const Slider = () => {
           {sliderImage.length > 0 ? (
             <SliderTemp images={sliderImage} />
           ) : (
-            <p>Cargando</p>
+            <p className="loading">Cargando</p>
           )}
         </div>
         
