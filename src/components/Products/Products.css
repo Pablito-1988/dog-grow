@@ -8,6 +8,7 @@
 .categoriesWrapper{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .category{
     display: flex;
@@ -185,7 +186,7 @@
 
 @media only screen and (min-width: 992px) {
   .categoriesWrapper{
-    width: 100%;
+    width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

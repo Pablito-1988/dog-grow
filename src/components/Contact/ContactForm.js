@@ -1,10 +1,23 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import emailjs from '@emailjs/browser'
+import SuccessModal from '../Modal/Modal'
 
 const ContactForm = () => {
     const service = "service_4cpysnp"
     const template = "template_xt34ltl"
     const user = "PMpHLbWXgjDfGqs2s"
+
+    const [ onSend, setOkSend] = useState(false)
+    
+    function closeModal (){
+      if (onSend === false){
+        setOkSend(true)
+      }
+      else{
+        setOkSend(false)
+      }
+      
+    }
 
     function sendEmail(e) {
         e.preventDefault();
@@ -12,6 +25,7 @@ const ContactForm = () => {
         emailjs.sendForm(service, template, e.target, user).then(
           (result) => {
             console.log(result.text);
+            setOkSend(true)
           },
           (error) => {
             console.log(error.text);
@@ -58,7 +72,8 @@ const ContactForm = () => {
                   </button>
                 </div>
               </form>
-            
+              <button onClick={()=>{closeModal()}} > mostrar modal </button>
+          {onSend && <SuccessModal texto= {'El mensaje fué enviado con exito, a la brevedad nos pondremos en contacto.'} closeModal = {()=>{closeModal()}}/>}
         </div>
     );
 };

@@ -2,7 +2,6 @@ import React from "react";
 
 const SellPoint = (props) => {
   const data = props.info;
-  console.log(data);
   if (!data) {
     return (
       <>

@@ -49,7 +49,6 @@ const SellPoints = () => {
         setSellPoints(data.sellPointCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  console.log(sellPoints);
 
   return (
     <div className='sellPointsWrapper'>

@@ -41,7 +41,6 @@ const MainProducts = () => {
         setProducts(data.productCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  console.log(products);
   return (
     <>
       <div className="MainProductsContainer">

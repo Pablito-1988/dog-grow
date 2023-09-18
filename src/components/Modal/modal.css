@@ -1,0 +1,57 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closeContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: red;
+}
+
+.modalContianer{
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: bisque;
+  padding: 2%;
+  width: 80%;
+}
+
+.mensajeModal{
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+.closeX{
+  margin: 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .modalContianer{
+    width: 40%;
+    padding: 10px;
+  }
+  .closeX{
+    color: red;
+  }
+}
+

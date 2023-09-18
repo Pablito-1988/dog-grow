@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = (props) => {
-  console.log(props);
   return (
     <Link className='linkContainerSection' to={`/producto/${props.nombre}`}>
       <div className='productContainer'>

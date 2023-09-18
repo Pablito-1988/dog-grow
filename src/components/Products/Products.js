@@ -43,7 +43,6 @@ const Products = () => {
         setProducts(data.productCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  console.log(products);
   return (
     <div className='productsWrapper'>
       <div className='pathLinks'>
