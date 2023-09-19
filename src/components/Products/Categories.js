@@ -41,8 +41,17 @@ const Categories = () => {
       });
   }, [ accessToken, spaceId, query]);
     
-
-    return (
+    if(page === null){
+      return (
+        <>
+          <div className='loadingCategories'>
+            <p>Cargando</p>
+          </div>
+        </>
+      )
+    }
+    else{
+      return (
         <div className='categoriesContainer'>
             <h1 className='categoriesMainTitle'>CATEGORIAS</h1>
             <div className='categoriesWrapper'>
@@ -54,6 +63,8 @@ const Categories = () => {
             
         </div>
     );
+    }
+    
 };
 
 export default Categories;

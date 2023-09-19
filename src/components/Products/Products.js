@@ -43,7 +43,24 @@ const Products = () => {
         setProducts(data.productCollection.items);
       });
   }, [accessToken, spaceId, query]);
-  return (
+  if(products.length === 0){
+    return(
+      <div className='productsWrapper'>
+      <div className='pathLinks'>
+        <div className='pathItem'>
+          <Link to={'/'}>INICIO</Link>{' '}/{' '}
+          <Link to={'/catalogo'}>CATEGORIAS</Link>{' '}
+        </div>
+      </div>
+      <h1 className='categoryName'>{category.categoria}</h1>
+      <div className='oneproduct'>
+        <p>Por el momento sin productos</p>
+      </div>
+    </div>
+    )
+  }
+  else{
+    return (
     <div className='productsWrapper'>
       <div className='pathLinks'>
         <div className='pathItem'>
@@ -67,6 +84,8 @@ const Products = () => {
       </div>
     </div>
   );
+  }
+  
 };
 
 export default Products;

@@ -9,6 +9,7 @@ const Product = (props) => {
           className='productMainImg'
           src={props.imagen}
           alt={props.categoria}
+          loading="lazy"
         />
         <p className='productName'>{props.nombre}</p>
 

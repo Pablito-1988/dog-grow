@@ -72,7 +72,6 @@ const ContactForm = () => {
                   </button>
                 </div>
               </form>
-              <button onClick={()=>{closeModal()}} > mostrar modal </button>
           {onSend && <SuccessModal texto= {'El mensaje fué enviado con exito, a la brevedad nos pondremos en contacto.'} closeModal = {()=>{closeModal()}}/>}
         </div>
     );

@@ -31,9 +31,10 @@ const Footer = () => {
         <div className="socialMedia">
           <p className="footerSection">REDES SOCIALES</p>
           <div className="socialLinks">
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-youtube"></i>
+            <a href="https://www.instagram.com/dog.growshop" target={"_blank"} rel="noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            
           </div>
         </div>
       </footer>
