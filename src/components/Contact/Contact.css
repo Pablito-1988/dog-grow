@@ -16,7 +16,7 @@
 .contactQuote{
     font-size: 18px;
     font-weight: bold;
-    
+    color: white;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -62,6 +62,10 @@ textarea{
 .contactButton:hover{
     background-color: #fff;
     color: #1BA74A;
+}
+
+.formInputTitle{
+    color: white;
 }
 @media only screen and (min-width: 992px) {
     .formContainer{
