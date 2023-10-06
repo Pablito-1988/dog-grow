@@ -10,3 +10,13 @@
     
 background: black
 }
+
+.whatsappButton{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.logo{
+  width: 60px;
+}

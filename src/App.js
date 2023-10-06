@@ -10,6 +10,7 @@ import Categories from "./components/Products/Categories"
 import Productos from "./components/Products/Products"
 import ProductDetail from "./components/Products/ProductDetail"
 import { Switch, Route } from "react-router-dom";
+import logo from "./assets/images/whats1.png"
 
 
 function App() {
@@ -26,6 +27,16 @@ function App() {
         <Route path="/categoria/:categoria" component={Productos} />
         <Route path="/producto/:producto" component={ProductDetail} />
       </Switch>
+      <div className="whatsappButton">
+                <a
+                  href={`https://wa.me/5491165480864?text=Hola me interesan tus productos`}
+                  target={'_blank'}
+                  rel='noreferrer'
+                >
+                 <img src={logo} alt="logoWhatsapp" className="logo"/>
+                </a>
+              
+      </div>
       <Footer />
     </div>
   );
