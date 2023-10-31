@@ -1,0 +1,36 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'Benoa-regular';
+    
+}
+
+.aboutTitle{
+    font-family: 'Benoa-regular';
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+}
+
+.subtitle{
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+.aboutContent{
+    padding-left:2%;
+    padding-right:2%;
+    color: white;
+}
+
+.finalh2{
+    text-align: center;
+    color: white;
+    padding: 0 2%;
+    -webkit-text-stroke: 1px black;
+
+}

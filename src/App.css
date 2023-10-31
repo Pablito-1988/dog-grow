@@ -8,6 +8,15 @@
     font-weight: 500;
 
     
-background: rgb(253,187,45);
-background: linear-gradient(180deg, rgba(253,187,45,1) 0%, rgba(247,45,253,1) 100%);
+background: black
+}
+
+.whatsappButton{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.logo{
+  width: 60px;
 }

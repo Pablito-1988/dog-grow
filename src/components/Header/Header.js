@@ -75,6 +75,12 @@ const Header = () => {
             >
               NOSOTROS
             </Link>
+            <Link
+              className='navLink'
+              to="/sell-points"
+            >
+              PUNTOS DE VENTA
+            </Link>
           </div>
         </div>
       </header>

@@ -38,7 +38,7 @@ const ContactForm = () => {
         <div className='formContainer'>
             <form className="form" onSubmit={sendEmail}>
                 <div className="nameAndEmailContainer">
-                    <h4>NOMBRE</h4>
+                    <h4 className='formInputTitle'>NOMBRE</h4>
                   <input
                     className="nameInput"
                     type="text"
@@ -46,7 +46,7 @@ const ContactForm = () => {
                     placeholder="nombre"
                     required
                   />
-                  <h4>EMAIL</h4>
+                  <h4 className='formInputTitle'>EMAIL</h4>
                   <input
                     className="emailInput"
                     type="email"
@@ -56,7 +56,7 @@ const ContactForm = () => {
                     required
                   />
                 
-                <h4>MENSAJE</h4>
+                <h4 className='formInputTitle'>MENSAJE</h4>
                 <textarea
                   id=""
                   cols="30"
