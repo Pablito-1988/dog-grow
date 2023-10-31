@@ -46,7 +46,7 @@ const ProductDetail = () => {
 
   function agregarSaltoDeLineaEnPuntos(texto) {
     if (product) {
-      const textoConSaltos = texto.replace(/\./g, '<br>');
+      const textoConSaltos = texto.replace(/&/g, '<br>');
       return textoConSaltos;
     }
   }
