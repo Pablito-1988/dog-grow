@@ -62,12 +62,12 @@ const Products = () => {
   else{
     return (
     <div className='productsWrapper'>
-      <div className='pathLinks'>
+      {/* <div className='pathLinks'>
         <div className='pathItem'>
           <Link to={'/'}>INICIO</Link>{' '}/{' '}
           <Link to={'/catalogo'}>CATEGORIAS</Link>{' '}
         </div>
-      </div>
+      </div> */}
       <h1 className='categoryName'>{category.categoria}</h1>
       <div className={products.length <= 2 ? 'oneproduct': 'allProducts' }>
         {products.map((product) => {

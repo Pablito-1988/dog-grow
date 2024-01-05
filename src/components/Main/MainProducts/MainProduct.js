@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MainProduct = (props) => {
   return (
-    <Link className='linkContainer'
+    <Link className='linkProductContainer'
       to={`/producto/${props.nombre}`}
     >
       <div className='mainProductContainer'>

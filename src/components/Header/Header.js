@@ -59,12 +59,6 @@ const Header = () => {
           <div className='desktopLinks'>
             <Link
               className='navLink'
-              to='/catalogo'
-            >
-              CATEGORIAS
-            </Link>
-            <Link
-              className='navLink'
               to='/contact'
             >
               CONTACTO
@@ -74,12 +68,6 @@ const Header = () => {
               to='/about'
             >
               NOSOTROS
-            </Link>
-            <Link
-              className='navLink'
-              to="/sell-points"
-            >
-              PUNTOS DE VENTA
             </Link>
           </div>
         </div>

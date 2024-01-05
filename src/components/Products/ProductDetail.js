@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const ProductDetail = () => {
@@ -46,7 +46,7 @@ const ProductDetail = () => {
 
   function agregarSaltoDeLineaEnPuntos(texto) {
     if (product) {
-      const textoConSaltos = texto.replace(/\./g, '<br>');
+      const textoConSaltos = texto.replace(/\.&/g, '<br>');
       return textoConSaltos;
     }
   }
@@ -64,7 +64,7 @@ const ProductDetail = () => {
         </>
       ) : (
         <>
-          <div className='pathLinks'>
+         {/*  <div className='pathLinks'>
             <div className='pathItem'>
               <Link to={'/'}>INICIO</Link>/{' '}
               <Link to={'/catalogo'}>CATEGORIAS</Link> /
@@ -74,7 +74,7 @@ const ProductDetail = () => {
               </Link>{' '}
               / {product[0].productName}
             </div>
-          </div>
+          </div> */}
           <div className='imageContainer'>
             <img
               className='productImg'
@@ -95,7 +95,7 @@ const ProductDetail = () => {
               <button className='orderButton'>
                 {' '}
                 <a
-                  href={`https://wa.me/5491165480864?text=Me%20interesa%20este%20producto:%20${product[0].productName}`}
+                  href={`https://wa.me/5491123953787?text=Me%20interesa%20este%20producto:%20${product[0].productName}`}
                   target={'_blank'}
                   rel='noreferrer'
                 >

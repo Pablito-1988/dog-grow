@@ -8,11 +8,14 @@
 }
 .ProductsWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 95%;
+}
+.linkProductContainer{
+  width: 95%;
 }
 .mainProductContainer {
   width: 100%;
@@ -30,8 +33,7 @@
   font-size: 40px;
 }
 .mainProductMainImg {
-  width: 10rem;
-  height: 10rem;
+  width: 100%;
   border-radius: 5%;
 }
 .mainProductInfoPrice {
@@ -50,12 +52,26 @@
   margin-top: 10px;
 }
 @media only screen and (min-width: 992px) {
+  .ProductsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+  }
   .mainProductContainer{
-    width: 100%;
+  width: 100%;
   }
   .linkContainer{
     display: flex;
     width: 25%;
+  }
+  .mainProductMainImg {
+    width: 90%;
+    border-radius: 5%;
+  }
+  .linkProductContainer{
+    width: 33%;
   }
   
 }

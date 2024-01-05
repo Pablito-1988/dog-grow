@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "./Slider/Slider";
-import Categories from "../Products/Categories";
+/* import Categories from "../Products/Categories"; */
 import MainProducts from "./MainProducts/MainProducts";
+import escala from "../../assets/images/escala.PNG";
 import "./Main.css";
 
 const Main = () => {
@@ -16,7 +17,10 @@ const Main = () => {
       <div className="MainProducts">
         <MainProducts />
       </div>
-      <Categories/>
+      {/*       <Categories/> */}
+      <div className="escalaContiner">
+        <img className="escala" src={escala} alt="escala"></img>
+      </div>
     </>
   );
 };

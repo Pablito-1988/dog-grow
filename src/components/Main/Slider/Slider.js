@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import SliderTemp from "./SliderTemp";
+import Sliderb from "./Sliderb";
 import "./Slider.css";
 
 
@@ -44,7 +44,7 @@ const Slider = () => {
       <div className="sliderContainer">
         <div className="slider">
           {sliderImage.length > 0 ? (
-            <SliderTemp images={sliderImage} />
+            <Sliderb images={sliderImage} interval={10000}/>
           ) : (
             <p className="loading">Cargando</p>
           )}

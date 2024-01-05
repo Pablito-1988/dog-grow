@@ -47,7 +47,8 @@ const MainProducts = () => {
         <h1 className="mainProductsTitle">PRODUCTOS DESTACADOS</h1>
         <div className="ProductsWrapper">
         {products.map((product) => {
-          return (
+          if(product.productName === 'Base A' |product.productName === 'Base B'|product.productName === 'Base C'){
+              return (
             <MainProduct
               key={product.productName}
               nombre={product.productName}
@@ -56,8 +57,44 @@ const MainProducts = () => {
               imagen={product.productMainImg.url}
             />
           );
+
+          }
+          return null
         })}
-          
+        </div>
+        <div className="ProductsWrapper">
+        {products.map((product) => {
+          if(product.productName === 'Grow UP' |product.productName === 'Flower Up'){
+              return (
+            <MainProduct
+              key={product.productName}
+              nombre={product.productName}
+              categoria={product.productCategory}
+              descripcion={product.productDescription}
+              imagen={product.productMainImg.url}
+            />
+          );
+
+          }
+          return null
+        })}
+        </div>
+        <div className="ProductsWrapper">
+        {products.map((product) => {
+          if(product.productName === 'Sistema DWC'){
+              return (
+            <MainProduct
+              key={product.productName}
+              nombre={product.productName}
+              categoria={product.productCategory}
+              descripcion={product.productDescription}
+              imagen={product.productMainImg.url}
+            />
+          );
+
+          }
+          return null
+        })}
         </div>
       </div>
     </>

@@ -20,3 +20,20 @@
     flex-direction: column;
     align-items: center;
 }
+.escalaContiner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.escala{
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    .sliderWrapper{
+        width:70%;
+        margin: auto;
+    }
+}
